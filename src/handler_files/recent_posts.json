@@ -1,0 +1,19 @@
+{
+    "recentPosts":[  
+        {
+            "blogUUID":"test1",
+            "name":"Integrating SwiftUI with UIKit", 
+            "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
+        },  
+        {
+            "blogUUID":"test2",
+            "name":"What's new in SwiftUI", 
+            "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
+        },  
+        {
+            "blogUUID":"test3",
+            "name":"What's new in UIKit", 
+            "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
+        }
+    ]
+}
