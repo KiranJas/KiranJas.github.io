@@ -23,6 +23,7 @@ export default {
     background-color: #087A7E;
     width: 100%;
     padding: 0.0rem 2rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);    
 }
 
 /* customizing navigation bar gap */

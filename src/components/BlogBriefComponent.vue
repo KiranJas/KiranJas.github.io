@@ -42,14 +42,14 @@ export default {
 .blogTitle {
   margin-top: 20px;
   font-family: "Poppins-Medium", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #272727;
 }
 
 .blogContent {
   margin-top: 8px;
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #272727;
 }
 </style>

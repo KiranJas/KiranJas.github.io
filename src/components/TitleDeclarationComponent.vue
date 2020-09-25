@@ -20,7 +20,7 @@ export default {
 }
 .titleLayout {
     font-family: 'Roboto-Medium', sans-serif;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     color: black;
 }
 </style>
