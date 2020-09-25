@@ -15,7 +15,7 @@ export default {
 .generic {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     text-align: left;
 }
 .titleLayout {
@@ -23,4 +23,4 @@ export default {
     font-size: 1.1rem;
     color: black;
 }
-</style>
+</style>    

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <div style="opacity: 0.0">Invisible View</div>
     <TitleDeclarationCom/>
     <BlogBriefCom/>
   </div>
