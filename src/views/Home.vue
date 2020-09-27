@@ -54,12 +54,12 @@ export default {
   align-content: left;
   text-align: left;
 
-  font-family: "Poppins-Medium", sans-serif;
+  font-family: "Roboto-bold", sans-serif;
   font-size: 0.8rem;
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 6px;
   border-width: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 </style>

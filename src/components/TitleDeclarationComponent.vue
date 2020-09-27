@@ -1,7 +1,7 @@
 <template>
     <div class="generic">
         <h6 class="titleLayout"> Recent Posts </h6>
-        <hr/>
+        <hr class="hrTheme"/>
     </div>    
 </template>
 
@@ -20,7 +20,12 @@ export default {
 }
 .titleLayout {
     font-family: 'Roboto-Medium', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: black;
+}
+
+.hrTheme {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 </style>    

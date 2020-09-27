@@ -92,17 +92,5 @@ export default {
   font-size: bold;
 }
 
-.tagColor {
-  background-color: #d2f6c5;
-  color: black;
-  align-content: left;
-  text-align: left;
-  margin: 0px 0px 20px 10px;
 
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 0.8rem;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-radius: 6px;
-}
 </style>

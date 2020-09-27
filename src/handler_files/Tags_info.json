@@ -1,0 +1,39 @@
+{
+    "tagsInfo":[  
+        {
+            "tagUUID": "news_in_coffeewithswift",
+            "tagName": "News",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "swiftui_in_coffeewithswift",
+            "tagName": "SwiftUI",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "swift_in_coffeewithswift",
+            "tagName": "Swift",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "uikit_in_coffeewithswift",
+            "tagName": "uikit",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "xcode_in_coffeewithswift",
+            "tagName": "Xcode",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "tips_in_coffeewithswift",
+            "tagName": "Tips",
+            "backgroundColor": ""
+        },  
+        {
+            "tagUUID": "datastructure_in_coffeewithswift",
+            "tagName": "Data Structure",
+            "backgroundColor": ""
+        }
+    ]
+}
