@@ -17,12 +17,14 @@
 
 <script>
 import recentPostsData from "../handler_files/Recent_posts.json";
+import tagsInfo from "../handler_files/Tags_info.json";
 
 export default {
   name: "BlogBriefCom",
   data() {
     return {
       recentPostsObj: recentPostsData,
+      tagsInfoObj: tagsInfo,
     };
   },
 };
