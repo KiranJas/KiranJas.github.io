@@ -1,66 +1,62 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <div style="opacity: 0.0">Invisible View</div>
+    <div style="opacity: 0">Invisible View</div>
 
+    <!-- Tags List -->
     <div class="row tags">
-      <div v-for="row in this.tagsInfoObj.tagsInfoList"
-      :key="row.tagUUID">
+      <div
+        v-for="(row, index) in this.tagsInfoObj.tagsInfoList"
+        :key="row.tagUUID"
+      >
 
-      <b-button :style="'background-color: ' + row.backgroundColor + '; margin-left: 10px'" 
-      class="float-left tagColor">{{row.tagName}}</b-button>
-      
+        <div :style="index == 0 ? 'margin-left: 0px;' : 'margin-left: 10px;'">
+          <b-button
+            :style="'background-color:' + row.backgroundColor + ';'"
+            class="float-left tagColor"
+            >{{ row.tagName }}</b-button>
+        </div>
       </div>
-      
-      <!-- <b-button style="background-color: #222831;" 
+
+      <!-- 
+        <b-button style="background-color: #222831;" 
       class="float-left tagColor">News</b-button>
-      <b-button style="background-color: #0085ba; margin-left: 10px;" 
-      class="float-left tagColor">SwiftUI</b-button>
-      <b-button style="background-color: #ff4b5c; margin-left: 10px;" 
-      class="float-left tagColor">Swift</b-button>
-      <b-button style="background-color: #81b214; margin-left: 10px;" 
-      class="float-left tagColor">UIKit</b-button>
-      <b-button style="background-color: #557571; margin-left: 10px;" 
-      class="float-left tagColor">Xcode</b-button>
-      <b-button style="background-color: #ba6b57; margin-left: 10px;" 
-      class="float-left tagColor">Tips</b-button>
-      <b-button style="background-color: #776d8a; margin-left: 10px;" 
-      class="float-left tagColor">Data Structure</b-button> -->
+      -->
     </div>
 
-    <TitleDeclarationCom/>
-    <BlogBriefCom/>
+    <TitleDeclarationCom />
+    <BlogBriefCom />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TitleDeclarationCom from '../components/TitleDeclarationComponent'
-import BlogBriefCom from '../components/BlogBriefComponent'
+import TitleDeclarationCom from "../components/TitleDeclarationComponent";
+import BlogBriefCom from "../components/BlogBriefComponent";
 
-import tagsInfo from '../handler_files/Tags_info.json'
+import tagsInfo from "../handler_files/Tags_info.json";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     TitleDeclarationCom,
-    BlogBriefCom
+    BlogBriefCom,
   },
   data() {
     return {
-      tagsInfoObj: tagsInfo
-    }
-  }
-}
+      tagsInfoObj: tagsInfo,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .tags {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 100%;
-    /* margin-top: 80px; */
-    text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+  /* margin-top: 80px; */
+  text-align: left;
 }
 
 .tagColor {
@@ -76,5 +72,9 @@ export default {
   border-radius: 6px;
   border-width: 0px;
   margin-bottom: 50px;
+}
+
+.tagLeftMargin {
+  margin-left: 10px;
 }
 </style>
