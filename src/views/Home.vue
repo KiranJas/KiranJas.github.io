@@ -2,9 +2,17 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <div style="opacity: 0.0">Invisible View</div>
+
     <div class="row tags">
-      <!-- #d2f6c5 -->
-      <b-button style="background-color: #222831;" 
+      <div v-for="row in this.tagsInfoObj.tagsInfoList"
+      :key="row.tagUUID">
+
+      <b-button :style="'background-color: ' + row.backgroundColor + '; margin-left: 10px'" 
+      class="float-left tagColor">{{row.tagName}}</b-button>
+      
+      </div>
+      
+      <!-- <b-button style="background-color: #222831;" 
       class="float-left tagColor">News</b-button>
       <b-button style="background-color: #0085ba; margin-left: 10px;" 
       class="float-left tagColor">SwiftUI</b-button>
@@ -17,7 +25,7 @@
       <b-button style="background-color: #ba6b57; margin-left: 10px;" 
       class="float-left tagColor">Tips</b-button>
       <b-button style="background-color: #776d8a; margin-left: 10px;" 
-      class="float-left tagColor">Data Structure</b-button>
+      class="float-left tagColor">Data Structure</b-button> -->
     </div>
 
     <TitleDeclarationCom/>
@@ -30,11 +38,18 @@
 import TitleDeclarationCom from '../components/TitleDeclarationComponent'
 import BlogBriefCom from '../components/BlogBriefComponent'
 
+import tagsInfo from '../handler_files/Tags_info.json'
+
 export default {
   name: 'Home',
   components: {
     TitleDeclarationCom,
     BlogBriefCom
+  },
+  data() {
+    return {
+      tagsInfoObj: tagsInfo
+    }
   }
 }
 </script>
