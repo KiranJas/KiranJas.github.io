@@ -2,16 +2,19 @@
     "recentPosts":[  
         {
             "blogUUID":"test1",
+            "tags": ["swiftui_in_coffeewithswift"],
             "name":"Integrating SwiftUI with UIKit", 
             "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
         },  
         {
             "blogUUID":"test2",
+            "tags": ["uikit_in_coffeewithswift"],
             "name":"What's new in SwiftUI", 
             "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
         },  
         {
             "blogUUID":"test3",
+            "tags": ["datastructure_in_coffeewithswift"],
             "name":"What's new in UIKit", 
             "content": "SwiftUI was introduced in iOS 13 in a time many of us have a big app built with UIKit. SwiftUI"
         }
