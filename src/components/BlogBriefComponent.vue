@@ -2,7 +2,7 @@
   <div class="row generic">
     <div
       class="col-lg-4 col-md-6"
-      v-for="row in this.reversedMessage"
+      v-for="row in this.recentPostsObj"
       :key="row.blogUUID"
     >
       <router-link :to="{ name: 'BlogPage', params: { uuid: row.blogUUID } }">
@@ -21,20 +21,23 @@
 </template>
 
 <script>
+// https://forum.freecodecamp.org/t/vuejs-vue-router-content-of-view-is-reset-to-default-when-come-back-to-the-page/342947/2
 import recentPostsData from "../handler_files/Recent_posts.json";
 import tagsInfo from "../handler_files/Tags_info.json";
 
 export default {
-  name: "BlogBriefCom",
+  name: "BlogBriefComponent",
   data() {
     return {
       recentPostsObj: [],
       tagsInfoObj: tagsInfo,
     };
   },
-  computed: {
-    // a computed getter
-    reversedMessage: function () {
+  created() {
+    this.assignData()
+  },
+  methods: {
+    assignData() {
       // `this` points to the vm instance
       var arrayOfPosts = recentPostsData.recentPosts;
       var arrayOfTags = tagsInfo.tagsInfoList;
@@ -50,10 +53,10 @@ export default {
           arrayOfPosts[i].tagsList = result;
         }
       }
-      console.log(arrayOfPosts);
-      return arrayOfPosts;
-    },
-  },
+      // console.log(arrayOfPosts);
+      this.recentPostsObj = arrayOfPosts
+    }
+  }
 };
 </script>
 

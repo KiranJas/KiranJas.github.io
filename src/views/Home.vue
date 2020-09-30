@@ -5,21 +5,21 @@
     <TagsListCom />
 
     <TitleDeclarationCom />
-    <BlogBriefCom />
+    <BlogBriefComponent />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import TitleDeclarationCom from "../components/TitleDeclarationComponent";
-import BlogBriefCom from "../components/BlogBriefComponent";
+import BlogBriefComponent from "../components/BlogBriefComponent";
 import TagsListCom from "../components/TagsList";
 
 export default {
   name: "Home",
   components: {
     TitleDeclarationCom,
-    BlogBriefCom,
+    BlogBriefComponent,
     TagsListCom
   }
 };
