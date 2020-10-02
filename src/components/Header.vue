@@ -13,10 +13,10 @@
             style="width: 30px; margin: 10px 12px 10px 10px"
           />
           <!-- <img src="../assets/coffee-icon.png" style="width: 30px; margin: 10px 12px 10px 10px"/> -->
-          <img
+          <!-- <img
             src="../assets/coffee_with_swift.png"
             style="height: 40px; margin: 16px 0px 0px 0px"
-          />
+          /> -->
         </div>
       </div>
 

@@ -10,8 +10,8 @@
 
 import axios from "axios";
 const ax = axios.create({
-  baseURL: "http://localhost:8080/",
-  // baseURL: "https://kiranjas.github.io/",
+  // baseURL: "http://localhost:8080/",
+  baseURL: "https://kiranjas.github.io/",
 });
 
 export default {
