@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <Header/>
-    <Subheader/>
+    <!-- <Subheader/> -->
     <router-view/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import Subheader from "./components/Subheader";
+// import Subheader from "./components/Subheader";
 
 export default {
   name: "app",
   components: {
     Header,
-    Subheader
+    // Subheader
   }
 }
 </script>

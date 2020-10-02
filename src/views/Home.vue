@@ -1,24 +1,30 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <TitleDeclarationCom/>
-    <BlogBriefCom/>
+    <div style="opacity: 0">Invisible View</div>
+    <!-- <TagsListCom />
+
+    <TitleDeclarationCom />
+    <BlogBriefComponent /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TitleDeclarationCom from '../components/TitleDeclarationComponent'
-import BlogBriefCom from '../components/BlogBriefComponent'
+// import TitleDeclarationCom from "../components/TitleDeclarationComponent";
+// import BlogBriefComponent from "../components/BlogBriefComponent";
+// import TagsListCom from "../components/TagsList";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    TitleDeclarationCom,
-    BlogBriefCom
+    // TitleDeclarationCom,
+    // BlogBriefComponent,
+    // TagsListCom
   }
-}
+};
 </script>
 
-<style>
+<style scoped>
+
 </style>
