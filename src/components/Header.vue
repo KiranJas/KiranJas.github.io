@@ -8,10 +8,7 @@
     >
       <div style="width: 360px">
         <div class="float-left" style="text">
-          <img
-            :src="require('../assets/coffee-icon.png')"
-            style="width: 30px; margin: 10px 12px 10px 10px"
-          />
+          
           <!-- <img src="../assets/coffee-icon.png" style="width: 30px; margin: 10px 12px 10px 10px"/> -->
           <!-- <img
             src="../assets/coffee_with_swift.png"

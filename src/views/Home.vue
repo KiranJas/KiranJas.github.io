@@ -11,15 +11,11 @@
 
 <script>
 // @ is an alias to /src
-// import TitleDeclarationCom from "../components/TitleDeclarationComponent";
-// import BlogBriefComponent from "../components/BlogBriefComponent";
 // import TagsListCom from "../components/TagsList";
 
 export default {
   name: "Home",
   components: {
-    // TitleDeclarationCom,
-    // BlogBriefComponent,
     // TagsListCom
   }
 };
